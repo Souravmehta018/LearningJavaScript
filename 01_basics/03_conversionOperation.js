@@ -35,3 +35,19 @@ console.log("----------")
 let isLoggedIn = 1
 let bool = Boolean(isLoggedIn)
 console.log(bool)
+
+console.log("----------")
+
+console.log(1+2)
+console.log(1+"2")
+console.log("1"+2+1)
+console.log(1+"2"+1)
+console.log(1+2+"1")
+
+console.log("----------")
+
+let counter =1
+counter++
+console.log(counter++)
+console.log(counter)
+console.log(++counter)
