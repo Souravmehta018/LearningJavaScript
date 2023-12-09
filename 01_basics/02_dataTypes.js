@@ -4,4 +4,8 @@
                 String, boolean, null, undefined, symbol, BigInt, Number
 
 Non Premitive/ Reference:
-                array, object, functions
+                array, object, functions*/
+
+let bigNum = 9786452315468764523145n
+// adding "n" at end of a big number treats it as bigInt
+
