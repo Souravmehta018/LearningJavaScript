@@ -9,3 +9,27 @@ Non Premitive/ Reference:
 let bigNum = 9786452315468764523145n
 // adding "n" at end of a big number treats it as bigInt
 
+console.log(typeof bigNum)
+
+// array, Objects, functions
+const Heros = ["shaktiman" , "saboo" , "flash"]
+
+console.log(typeof Heros)
+
+let myObj= {
+    name: "sourav",
+    age: 24
+}
+
+console.log(typeof myObj)
+
+const myfunction = function(){
+    console.log("this is a function")
+} 
+
+console.log(typeof myfunction)
+
+//type of all non premetive datatypes is "Object", for a function data type prints "function" but in documentation it states the actual meaning is "object function"
+
+
+// datatype of symbol is symbol
