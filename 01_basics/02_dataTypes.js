@@ -1,9 +1,9 @@
 "use Strict";   // treat js code in this file as newer version
 
-/*Premitive datatypes are of 7 catagories:
-                String, boolean, null, undefined, symbol, BigInt, Number
+/*Premitive datatypes are of 7 catagories: (call by value)
+                String, boolean, null, undefined, Symbol, BigInt, Number
 
-Non Premitive/ Reference:
+Non Premitive/ Reference: (direct reference to memory)
                 array, object, functions*/
 
 let bigNum = 9786452315468764523145n
