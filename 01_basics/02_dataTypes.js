@@ -33,3 +33,10 @@ console.log(typeof myfunction)
 
 
 // datatype of symbol is symbol
+
+/* Types of memory-
+1) Stack Memory (for premetive data types)
+2) Heap Memory (for reference datatypes)
+*/
+
+let myname = "Sourav"
