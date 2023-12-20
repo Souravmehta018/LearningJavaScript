@@ -34,9 +34,19 @@ console.log(typeof myfunction)
 
 // datatype of symbol is symbol
 
+console.log("--------------------Memories----------------")
 /* Types of memory-
 1) Stack Memory (for premetive data types)
 2) Heap Memory (for reference datatypes)
 */
 
+//example of stack memory
 let myname = "Sourav"
+let names = myname
+
+console.log(myname)
+console.log(names)
+console.log("As we can see the ")
+//example of heap memory
+
+
