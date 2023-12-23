@@ -47,6 +47,15 @@ let names = myname
 console.log(myname)
 console.log(names)
 console.log("As we can see the ")
+
 //example of heap memory
+console.log("-------------------heap memory----------------")
+let userOne = {
+    names: "Sourav",
+    upi: "1234567890"
+}
+let userTwo = userOne
+userTwo.names = "Lakshay"
 
-
+console.log(userOne)
+console.log(userTwo)
