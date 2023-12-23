@@ -30,6 +30,6 @@ console.log(typeof narry);
 console.log(marray);
  
 // slice, splice
-console.log(------slice splice -------);
+console.log("------slice splice -------");
 let sliceArray = numbers.slice(1,3);
 console.log(sliceArray);
