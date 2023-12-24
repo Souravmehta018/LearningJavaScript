@@ -1,5 +1,3 @@
-// singletone
-
 // object literals
 
 const sym = Symbol("key1");     //declaring a symbol
