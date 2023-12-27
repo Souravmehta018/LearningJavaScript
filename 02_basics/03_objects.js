@@ -19,3 +19,7 @@ const tinUser = {
 } // creating nested objects
 
 console.log(tinUser.name.fullname.firstname);
+
+console.log("---------------merging objects---------------");
+// same as arrays
+
