@@ -44,3 +44,13 @@ console.log(Object.values(obj1));   // provides values of objects as an array
 console.log(Object.entries(obj1));  // provides key value pairs of objects as an array
 
 console.log(obj5.hasOwnProperty('mail')); // hasOwnProperty
+
+console.log("-------Another syntax to get values of objects-------");
+const course = {
+    name: "Javascript",
+    price: 100,
+    courseIsntructor: "Sourav"
+}
+const {courseIsntructor, price} = course;       //this is also called destructuring of objects
+console.log(courseIsntructor);
+
