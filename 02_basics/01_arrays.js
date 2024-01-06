@@ -65,7 +65,7 @@ console.log(arra1);
 //console.log(arr1.concat(arr2));
 
 console.log("-----------Spread----------");
-const array = [...arra1,...arra2,...arra3];
+const array = [...arra1,...arra2,...arra3];     // also merges arrays 
 console.log(array);
 console.log(array[8]);
 

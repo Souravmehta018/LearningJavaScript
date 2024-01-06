@@ -33,4 +33,8 @@ user.greet = function() {
     console.log("Hello, " + this.name);
 }
 
-console.log(user.greet());      //undefined refers to second automatic execution
+console.log(user.greet());      //undefined refers to second automatic executionde
+
+console.log("------------------------------");
+
+console.log(user);
