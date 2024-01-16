@@ -20,3 +20,19 @@ if (arrayOfKeys.length === 0) {
 else {
     console.log("no keys")
 }
+
+// Nullish Coalescing Operator (??): null identifier
+
+let val1;
+//val1 = 5??10;
+//val1 = null ?? 10;
+//val1 = undefined ?? 15
+val1 = null ?? 15 ?? 5
+console.log(val1);
+
+//Turnery Operator
+
+// condition ? true : false;
+
+let price = 100;
+price >= 80 ? console.log(`Price is ${price}`) : console.log("Price is lower than 80");   
