@@ -15,6 +15,11 @@
             <div class="child"> Thursday </div>
             <div class="child"> Friday </div>
         </div>
+        <div></div>
+        <div>  </div>
+        <ul class = "languages">
+            <li> HTML </li>
+        </ul> 
     </BODY>   
     <script>
         const parent = document.getElementsByClassName("parent")[0];
@@ -34,6 +39,53 @@ console.log("-------------");
         console.log(day1.parentElement);
 console.log("-------------");
         console.log("NODES: ", parent.childNodes);
+        console.log("-------------");
+
+        const div = document.createElement("div");
+        
+        div.className = "new"
+        div.style.color = "blue";
+        div.id = Math.round(Math.random()*10+1)
+        div.setAttribute("data-test", "test");
+        
+        console.log(div);
+        //div.innerText = "Hello World!";
+        const addTxt = document.createTextNode("Hello World!");
+        parent.appendChild(div);
+console.log("-------------part 1 over--------------");
+
+//Add Laguage
+        function addLang(lang){
+            const li = document.createElement("li");
+            li.innerText = lang;
+            document.querySelector(".languages").appendChild(li);
+        }
+        addLang("CSS");
+        addLang("JavaScript");
+
+        // This is a slow process as complete tree is treverced each time a new language is added
+        // This is not recommended as it is a very expensive operation
+        // Now better optimized way
+
+        function newLang(lang) {
+            const li = document.createElement("li");
+            li.appendChild(document.createTextNode(lang));
+            document.querySelector(".languages").appendChild(li);
+        }
+        newLang("Python");
+        newLang("C#");
+
+    // EDIT
+        const firstLang = document.querySelector("li:first-child")
+        const secondLang = document.querySelector("li:nth-child(2)")
+        console.log(secondLang);
+        console.log(firstLang);
+        //firstLang.innerText = "C++";
+        const newLi = document.createElement("li").textContent = "Ruby";
+        secondLang.replaceWith(newLi);
+        firstLang.outerHTML = "<li>TypeScript</li>";
+    //Remove
+        document.querySelector("li:last-child").remove();
 
     </script> 
 </HTML>
