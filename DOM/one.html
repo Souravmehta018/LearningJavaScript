@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<HTML LANG="en">
+    <HEAD>
+        <TITLE>
+        </TITLE>
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+        <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0" />
+    </HEAD>
+    <BODY style= "background-color: #212121; color: #ffffff;">
+        <div class= "parent">
+            <div class="child"> Monday </div>
+            <div class="child"> Tuesday </div>
+            <div class="child"> Wednesday </div>
+            <div class="child"> Thursday </div>
+            <div class="child"> Friday </div>
+        </div>
+    </BODY>   
+    <script>
+        const parent = document.getElementsByClassName("parent")[0];
+        console.log(parent.children[2].innerHTML);
+console.log("-------------");
+        for (let i = 0; i < parent.children.length; i++) {
+            console.log(parent.children[i].innerHTML);            
+        }
+console.log("-------------");
+        parent.children[1].style.color = "red";
+//console.log("-------------");
+        console.log(parent.lastElementChild);
+console.log("-------------");
+        const day1 = document.querySelector(".child");
+        console.log(day1.previousElementSibling);
+        console.log(day1.nextElementSibling);
+        console.log(day1.parentElement);
+console.log("-------------");
+        console.log("NODES: ", parent.childNodes);
+
+    </script> 
+</HTML>
