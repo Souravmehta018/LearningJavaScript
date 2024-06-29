@@ -15,10 +15,10 @@ html {
     padding: 7px;
   }
   
-  .guesses {
+  /*.guesses {
     color: white;
     padding: 7px;
-  }
+  }*/
   
   button {
     background-color: #141414;
@@ -66,6 +66,8 @@ html {
   
   .guesses {
     background-color: #7a7a7a;
+    color: white;
+    padding: 7px;
   }
   
   #wrapper {
