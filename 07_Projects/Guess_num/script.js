@@ -6,6 +6,7 @@ const userInput = document.getElementById('guessField');
 const gus = document.querySelector('.guesses');
 //const chancesLeft = document.getElementsByClassName('chancesLeft');
 const cl= document.querySelector('.chancesLeft');
+const loHi = document.querySelector('.lowOrHi');
 //console.log(guesses);
 let gs = [];
 let gscount = 10;
@@ -25,14 +26,14 @@ submit.addEventListener('click', (e) => {
             //console.log(guess);
             gs.push(guess);
             console.log(gs);
-            gus.textContent = guess
+            gus.innerHTML += `${guess} `;
             //document.getElementsByClassName('guesses')
             
             if (guess < random) {
-            alert('Too low!');        
+            loHi.textContent = "tooo Low"        
             } 
             else {
-            alert('Too high!');
+            loHi.textContent = "tooo High"   
             }
         }
     gscount--;
