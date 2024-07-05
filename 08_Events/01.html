@@ -3,13 +3,50 @@
         <meta charset="UTF-8">
         <title>Events</title>
     </head>
-    <body>
+    <body style=" background-color: #414141; color: aliceblue;">
         <h1>Events</h1>
         <div>
             <ul id="images">
                 <li>
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczN9C476mKlG7HzUKfpi7hLNB9US3oj8RqTJ1GIdkV2xA6QlVUHWLLNglKdrtT4YeSvpafxQuTBsHLDQICfENu9bO5mTG3qeNcwGauj7T1Wv-q4WO74QJqFTMD6KySVXOGoJAwM6fRaBkTt5HHwnk78Qt81W8r-yeBZlU7EP_Vkyk3UB04OjY2E01f0E1mJ5M_C1AogS9NWDhrJBLwEclnGK08qWYNB3n9gUp_tmlVUheBPj7RR0M2CTyE_-kRsCaCQgF-EXTTd2DbEv4vHp9KUKy4J-zhVuf0_e1B945Ku3Vpbx9hiqKk0nAK9IYgg-bTz-TK8E-yOV8fiRoIAZ_-3Z4ahXt0iGbWR9XHnfylbkIr1l-5HXWWXX8pwwbOpG3kVtqe9Zn8v949du_1BCs5fc_HN0sZaENhxm0fA1UmG9c4jmdRHxg26c-3OJjFNY6vFT25LTfLOCyYA1B9a3fW93NgWUG9mH73nDT3bw64lRK1o6c8mgqb_OxYXk-Je6c6W8IXCqsTBFufgjj5HRjdNf882j4gFsYJGWnhnBvoZ2IjY8SdK3KUS2qSfeHuvu7GeKnU_jdZVtYo2SZ2WVv79DYfxpUsTnAi3zxaqkMDAbqgxVbV_EMiMPhtxnTlvzxweJ3FjEHI6tjsaPPLrX44hhBoaznE2ExsTSeAb7CRGeeL8jBAjWqlBIkWemn8gABogGre3aaaWpI5ivoLoGJ0O6z2UdEfTt2-JLTuIwxw9rJaO8Ntjxv3oJ1T02ouDnQRu6qap9PAHjLex1kHG1zGl3crwe5KNLVfxiF-nsv6o-M4JHA9isVBH1y2EGIPTlIqkl74OC9xgtEPKkbNOf6wta_WoTLe_b0qF026vGgjbh8xwMyDqIaE1bC5V1hmwf5LJhniBeh-iYKzs197fhKTV6VwOS7ZPmw4nVwaGjUt-CfiZP_Lxe_p0GbJLFkg=w795-h1080-s-no-gm?authuser=0"
-                    width="200px" id="kitchen">
+                    <img src="https://th.bing.com/th/id/R.0ef3f46e721fc38992d27ae094d8839d?rik=pkkoLMJ1sYH5%2bQ&riu=http%3a%2f%2fcdn.ebaumsworld.com%2fmediaFiles%2fpicture%2f1035099%2f85708057.jpg&ehk=0s2rVcOCi7BxjLnx3xC6W7QoS3gzbFcqqunGh21%2boZw%3d&risl=&pid=ImgRaw&r=0"
+                    width="200px" id="Dog" alt="bing">
                 </li>
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.cxhu5mu0lH4HxyLgQW4ZZwHaHa?rs=1&pid=ImgDetMain"
+                    width="200px" id="Frog" alt="">
+                </li>
+                <li>
+                    <img src="https://pbs.twimg.com/profile_images/428316729220276224/EdBZ2Kgp.jpeg"
+                    width="200px" id="Monkey" alt="">
+                </li>
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.tZq4FbHI-2VuBSGkHjfyfAHaHa?rs=1&pid=ImgDetMain"
+                    width="200px" id="Duck" alt="">
+                </li>
+                <li> <a herf="https://google.com" id="Google" style="color: aqua;">Google</a></li>
             </ul>
         </div>
+    </body>
+    <script>
+        //type, timestamp, defaultPrevented, isTrusted, target, srcElement
+        // currentTarget, toElement
+        // clientX, clientY, screenX, screenY, ctrlKey, altKey, shiftKey, metaKey, button, keyCode
+        document.getElementById("Dog").addEventListener("click", function(e){
+            alert("Dog");
+            console.log(e);
+        },false)
+
+        document.getElementById("Frog").addEventListener("click", function(){
+            alert("Frog");
+        })
+        document.getElementById("Monkey").addEventListener("click", function(){
+            alert("Monkey");
+        })
+        document.getElementById("Duck").addEventListener("click", function(){
+            alert("Duck");
+        })
+        document.getElementById("Google").addEventListener("click", function(){
+            alert("Google");
+        })
+    </script>
+</html>
