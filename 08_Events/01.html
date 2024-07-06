@@ -23,7 +23,7 @@
                     <img src="https://th.bing.com/th/id/OIP.tZq4FbHI-2VuBSGkHjfyfAHaHa?rs=1&pid=ImgDetMain"
                     width="200px" id="Duck" alt="">
                 </li>
-                <li> <a herf="https://google.com" id="Google" style="color: aqua;">Google</a></li>
+                <li> <a href="https://google.com" id="Google" style="color: aqua;">Google</a></li>
             </ul>
         </div>
     </body>
@@ -31,22 +31,30 @@
         //type, timestamp, defaultPrevented, isTrusted, target, srcElement
         // currentTarget, toElement
         // clientX, clientY, screenX, screenY, ctrlKey, altKey, shiftKey, metaKey, button, keyCode
-        document.getElementById("Dog").addEventListener("click", function(e){
-            alert("Dog");
-            console.log(e);
-        },false)
+        
+//        document.getElementById("images").addEventListener("click", function(){
+//            console.log("images");
+//
+//        },false)
+        //if as default is false for outer then the click will first be registered for inner element, is called bubbling
+        //if it is true for outer then the click will first be registered for outer element, is called capturing
 
-        document.getElementById("Frog").addEventListener("click", function(){
-            alert("Frog");
-        })
-        document.getElementById("Monkey").addEventListener("click", function(){
-            alert("Monkey");
-        })
+//       document.getElementById("Dog").addEventListener("click", function(){
+//           console.log("Dog");
+//        },false)
+
+//        document.getElementById("Monkey").addEventListener("click", function(e){
+//            console.log("Monkey");
+//            e.stopPropagation();
+//        })
+        //the event won't bubble and go to the outer element, (if bubbling is false)
         document.getElementById("Duck").addEventListener("click", function(){
             alert("Duck");
         })
-        document.getElementById("Google").addEventListener("click", function(){
-            alert("Google");
-        })
+//       document.getElementById("Google").addEventListener("click", function(e){
+//            e.preventDefault();
+//            console.log("Google");
+//            e.stopPropagation();
+//        })
     </script>
 </html>
