@@ -1,0 +1,58 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Events</title>
+    </head>
+    <body style=" background-color: #414141; color: aliceblue;">
+        <h1>Events</h1>
+        <div>
+            <ul id="images">
+                <li>
+                    <button id="stop"> Stop </button>
+                </li>
+                <li id="dog">
+                    
+                </li>
+                <li id="frog">
+                   
+                </li>
+                <li id="monkey">
+                    
+                </li>
+                <li id="duck">
+                </li>
+                <li> <a href="https://google.com" id="Google" style="color: aqua;">Google</a></li>
+            </ul>
+        </div>
+    </body>
+    <script>
+//        setInterval(function(){
+//            console.log("Hello", Date.now());
+//        },1000);
+        //1000 ms = 1 second 
+        const dog = function () {
+            document.querySelector("#dog").innerHTML = "this is a dog";
+        }
+        const frog = function () {
+            document.querySelector("#frog").innerHTML = "this is a frog";
+        }
+        const monkey = function () {
+            document.querySelector("#monkey").innerHTML = "this is a monkey";
+        }
+        const duck = function () {
+            document.querySelector("#duck").innerHTML = "this is a duck";
+        }
+        const t1 = setTimeout(dog, 1000);
+        const t2 =setTimeout(frog, 2000);
+        const t3 =setTimeout(monkey, 3000);
+        const t4 =setTimeout(duck, 4000);
+
+            document.querySelector("#stop").addEventListener("click", function(){
+                console.log("Stop");
+                clearTimeout(t1);
+                clearTimeout(t2);
+                clearTimeout(t3);
+                clearTimeout(t4);
+            });
+    </script>
+</html>
