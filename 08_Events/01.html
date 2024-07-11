@@ -48,13 +48,23 @@
 //            e.stopPropagation();
 //        })
         //the event won't bubble and go to the outer element, (if bubbling is false)
-        document.getElementById("Duck").addEventListener("click", function(){
-            alert("Duck");
-        })
+//        document.getElementById("Duck").addEventListener("click", function(){
+//            alert("Duck");
+//        })
 //       document.getElementById("Google").addEventListener("click", function(e){
 //            e.preventDefault();
 //            console.log("Google");
 //            e.stopPropagation();
 //        })
+        document.getElementById("images").addEventListener("click", function(e){
+            console.log(e.target.parentNode);
+            e.stopPropagation();
+            if (e.target.tagName === "IMG"){
+                
+                let removeItem = e.target.parentNode;
+                //removeItem.remove();
+                removeItem.parentNode.removeChild(removeItem);
+            }
+        })
     </script>
-</html>
+</html>.
