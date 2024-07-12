@@ -16,13 +16,17 @@ const randomHex = () => {
 };
 let interval;
 const startChangingColor = function(){
-    interval = setInterval(colorchange,1000)
+    if(!interval){
+        interval = setInterval(colorchange,1000)}
+        
     function colorchange(){
         document.body.style.backgroundColor = randomColor();
         }
+    
 }
 const stopChangingColor = function(){
     clearInterval(interval);
+    interval = null;
 //    console.log("stp");
 }
 
