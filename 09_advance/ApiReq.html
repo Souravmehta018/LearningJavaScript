@@ -1,0 +1,43 @@
+<html>
+        <head>
+        <title>Event KeyCodes</title>
+        </head>
+        <style>
+    table, th, td {
+        border: 1px solid #e7e7e7;
+      }
+        </style>
+        <body style="background-color: #212121; color: aliceblue;">
+            <table>
+            <tr><td> 0 </td><td>UNSENT</td> <td>Client has been created. open() not called yet.</td></tr>
+            <tr><td> 1 </td><td>OPENED</td> <td>open() has been called.</td></tr>
+            <tr><td> 2 </td><td>HEADERS_RECEIVED</td> <td>send() has been called, and headers and status are available.</td></tr>
+            <tr><td> 3 </td><td>LOADING_Downloading</td> <td>responseText holds partial data.</td></tr>
+            <tr><td> 4 </td><td>DONE</td> <td>The operation is complete.</td></tr>
+            </table>
+            <div id="insert">
+                </div>
+        </body>
+        <script>
+            const insert = document.getElementById("insert");
+            const xhr = new     XMLHttpRequest();
+            xhr.open("GET", "https://api.github.com/users/Souravmehta018")
+            xhr.onreadystatechange = function () {
+                
+            console.log(xhr.readyState);
+                if (xhr.readyState === 4) {
+                    console.log(this.responseText);
+                    console.log(typeof this.responseText);
+                    const data  = JSON.parse(this.responseText);
+                    console.log(data.login);
+                    insert.innerHTML = `
+                        <img src="${data.avatar_url}" alt="Avatar">
+                        <h1>${data.login}</h1>
+                        <h2>${data.name}</h2>
+                    `
+                }
+            }
+            xhr.send()
+        </script>
+</html>
+
